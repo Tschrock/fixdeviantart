@@ -1,0 +1,4 @@
+name = "da-fx"
+main = "src/index.ts"
+compatibility_date = "2022-04-28"
+routes = [{pattern = "*fixdeviantart.com/*", zone_id = "f009dd5ac46d7317252f2592cddddd3b"}]
