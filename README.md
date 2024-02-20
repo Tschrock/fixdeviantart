@@ -8,3 +8,5 @@ This is written in [TypeScript](https://www.typescriptlang.org/) and runs as a [
 Here are some other versions:
 - Python: [fxdeviantart](https://github.com/robinuniverse/fxdeviantart)
 - NodeJS: [fxdeviantart.js](https://github.com/DorukSega/fxdeviantart.js)
+
+Here's a list of some other embed fixers I've seen: https://fx.nerd.horse/
