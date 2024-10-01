@@ -7,6 +7,7 @@ interface oEmbed {
   url: string
   author_name: string
   provider_name: string
+  fullsize_url?: string | undefined
 }
 
 export interface Env {
@@ -41,12 +42,12 @@ export default {
   <!-- OpenGraph -->
   <meta property="og:title" content="${escape(data.title)}">
   <meta property="og:site_name" content="${escape(data.provider_name)}">
-  <meta property="og:image" content="${escape(data.url)}">
+  <meta property="og:image" content="${escape(data.fullsize_url ?? data.url)}">
   
   <!-- Twitter Card -->
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="${escape(data.title)}" />
-  <meta name="twitter:image" content="${escape(data.url)}" />
+  <meta name="twitter:image" content="${escape(data.fullsize_url ?? data.url)}" />
 
   <!-- Redirect real clients -->
   <meta http-equiv="refresh" content="0; url=${escape(url.toString())}" />
